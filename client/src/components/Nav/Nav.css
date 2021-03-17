@@ -1,0 +1,8 @@
+.MuiButton-label {
+  transition: all ease-in-out 150ms;
+}
+
+.MuiButton-label:hover {
+  font-size: 0.91rem;
+  color: #b48ead;
+}

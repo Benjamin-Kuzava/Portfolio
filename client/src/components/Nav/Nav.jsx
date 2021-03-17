@@ -1,10 +1,13 @@
-import React from "react";
+import React, { cloneElement } from "react";
 import PropTypes from "prop-types";
 import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
 import useScrollTrigger from "@material-ui/core/useScrollTrigger";
-import { cloneElement } from "react";
-import { Button, Grid, makeStyles } from "@material-ui/core";
+import { makeStyles } from "@material-ui/core";
+import Button from "@material-ui/core/Button/Button";
+import Grid from "@material-ui/core/Grid/Grid";
+import GitHubIcon from "@material-ui/icons/GitHub";
+import "./Nav.css";
 
 const useStyles = makeStyles(() => ({
   navItem: {
