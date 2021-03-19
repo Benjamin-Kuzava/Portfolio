@@ -6,7 +6,6 @@ import useScrollTrigger from "@material-ui/core/useScrollTrigger";
 import { makeStyles } from "@material-ui/core";
 import Button from "@material-ui/core/Button/Button";
 import Grid from "@material-ui/core/Grid/Grid";
-import GitHubIcon from "@material-ui/icons/GitHub";
 import "./Nav.css";
 
 const useStyles = makeStyles(() => ({
@@ -40,7 +39,10 @@ const handleSmoothClick = (event, id) => {
   );
 
   if (anchor) {
-    anchor.scrollIntoView({ behavior: "smooth", block: "center" });
+    anchor.scrollIntoView({
+      behavior: "smooth",
+      block: id === "contact-section" ? "start" : "center",
+    });
   }
 };
 
@@ -52,7 +54,7 @@ export default function ElevateAppBar(props) {
       <ElevationScroll {...props}>
         <AppBar>
           <Toolbar>
-            <Grid container justify="flex-start" spacing={2}>
+            <Grid component="nav" container justify="flex-start" spacing={2}>
               <Button
                 component={Grid}
                 variant="text"

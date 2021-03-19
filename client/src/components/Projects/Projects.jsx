@@ -1,10 +1,20 @@
+import { Grid } from "@material-ui/core";
 import React from "react";
+import ProjectGallery from "../GridList/ProjectGallery";
 
 const Projects = () => {
   return (
-    <section className="projects-section" id="projects-section">
-      <h1>This is the Projects section</h1>
-    </section>
+    <Grid
+      item
+      container
+      justify="center"
+      alignItems="center"
+      component="section"
+      className="projects-section"
+      id="projects-section"
+    >
+      <ProjectGallery />
+    </Grid>
   );
 };
 

@@ -8,7 +8,7 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
       <div className="App">
-        <Route path="/">
+        <Route exact path="/">
           <Home />
         </Route>
       </div>
