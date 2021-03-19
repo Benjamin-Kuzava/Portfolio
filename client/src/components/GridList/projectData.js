@@ -53,11 +53,11 @@ export const projects = [
     imageTwo: binarysearchTwo,
     title: "Binary Search Visualization",
     description:
-      "Users can generate a random collection of books that are then arranged on a virtual bookshelf. Users can select a specific title to see how the binary search algorithm locates a specific book on the shelf. While the search runs, values tracked within the algorithm are highlighted, including the left and right bounds and current target.",
+      "Built with vanilla JS, HTML, and CSS, users can generate a random collection of books that are then arranged on a virtual bookshelf. Users can select a specific title to see how the binary search algorithm locates a specific book on the shelf. While the search runs, values tracked within the algorithm are highlighted, including the left and right bounds and current target.",
     descriptionTwo:
       "After the search finishes, a window pops up that displays additional information about the selected book.",
     gitHub: "https://github.com/Benjamin-Kuzava/binary-search-visualization",
-    liveSite: "",
+    liveSite: "https://loving-euler-575ac1.netlify.app/",
     cols: 2,
   },
 ];
