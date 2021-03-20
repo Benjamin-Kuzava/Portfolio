@@ -13,7 +13,7 @@ export const projects = [
   {
     image: gathering,
     imageTwo: gatheringTwo,
-    imageThree: gatheringThree,
+    // imageThree: gatheringThree,
     title: "The Gathering",
     description:
       "A full-stack app based on similar sites where users can browse a collection of Magic The Gathering articles. Leveraging React.js on the front end, as well as Ruby on Rails on the backend, this application allows authenticated users to create, edit and delete associated posts.",
@@ -27,7 +27,7 @@ export const projects = [
     image:
       "https://images.pexels.com/photos/188029/pexels-photo-188029.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=",
     imageTwo: valhallaTwo,
-    imageThree: valhallaThree,
+    // imageThree: valhallaThree,
     title: "Vahalla",
     description:
       "This fullstack MERN application allows users to browse a list of private islands for purchasing. General users have the ability to browse and select islands, while authenticated users can create, update, and delete their products from the inventory.",
@@ -41,7 +41,7 @@ export const projects = [
     image: icebreaker,
     title: "IceBreaker",
     imageTwo: icebreakerTwo,
-    imageThree: icebreakerThree,
+    // imageThree: icebreakerThree,
     description:
       "Using React.js and airtable, this grid-based mini-game allows users to play, browse and create levels stored in an airtable database. The goal of the game is to travel from point A to point B on a grid, touching each non-obstacle tile on the grid exactly once. Once a tile has been traversed, it cracks, meaning that traveling back to that tile will end the game.",
     gitHub: "https://github.com/Benjamin-Kuzava/icebreaker",
