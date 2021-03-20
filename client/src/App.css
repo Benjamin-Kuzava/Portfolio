@@ -22,10 +22,21 @@ html {
   color: white;
 }
 
+.hero-section {
+  min-height: 100vh;
+}
+
 .about-section {
   background-color: #121212;
   color: #d8dee9;
   min-height: 100vh;
+}
+
+.stack-section {
+  background-color: #b48ead;
+  color: #121212;
+  min-height: 20vh;
+  padding: 2em 0;
 }
 
 .projects-section {
@@ -89,4 +100,9 @@ footer {
   margin-bottom: 1em;
   position: relative;
   text-align: center;
+}
+
+.outline {
+  -webkit-text-stroke: 1px white;
+  -webkit-text-fill-color: #121212;
 }
