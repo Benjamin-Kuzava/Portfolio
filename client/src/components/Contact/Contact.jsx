@@ -8,6 +8,7 @@ import {
   Popover,
 } from "@material-ui/core";
 import React, { useState } from "react";
+import emailjs, { EmailJSResponseStatus } from "emailjs-com";
 
 const CustomTextField = withStyles({
   root: {
@@ -54,6 +55,26 @@ const Contact = () => {
 
   const { name, email, message } = formData;
 
+  const sendEmail = (e) => {
+    e.preventDefault();
+    emailjs
+      .sendForm(
+        "service_phzkear",
+        "template_k3fn8g9",
+        e.target,
+        "user_e3RfGC6TRo0HouXTv5Ny4"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+    e.target.reset();
+  };
+
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData((prev) => ({
@@ -62,8 +83,9 @@ const Contact = () => {
     }));
   };
 
-  const handleClick = (event) => {
-    setAnchorEl(event.currentTarget);
+  const handleSubmit = (e) => {
+    setAnchorEl(e.currentTarget);
+    sendEmail(e);
   };
 
   const handleClose = () => {
@@ -85,7 +107,7 @@ const Contact = () => {
       id="contact-section"
       onSubmit={(e) => {
         e.preventDefault();
-        handleClick(e);
+        handleSubmit(e);
       }}
     >
       <Grid item>
