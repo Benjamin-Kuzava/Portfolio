@@ -72,7 +72,11 @@ const Contact = () => {
           console.log(error.text);
         }
       );
-    e.target.reset();
+    setFormData({
+      name: "",
+      email: "",
+      message: "",
+    });
   };
 
   const handleChange = (e) => {
